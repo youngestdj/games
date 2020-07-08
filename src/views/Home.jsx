@@ -18,10 +18,6 @@ const Home = () => {
     });
   };
 
-  // const validateInput = () => {
-  //   if()
-  // }
-
   const getGames = async (d, m, y) => {
     const URL = `http://gd2.mlb.com/components/game/mlb/year_${y}/month_${m}/day_${d}/master_scoreboard.json`;
     try {
@@ -56,15 +52,6 @@ const Home = () => {
     return;
   };
 
-  // useEffect(() => {
-  //   const bla = async () => {
-  //     await getGames().then((res) => {
-  //       setGames(res.data.games.game);
-  //     });
-  //   };
-  //   bla();
-  // }, []);
-  console.log(games);
 
   return (
     <>

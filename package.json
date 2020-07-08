@@ -2,7 +2,7 @@
   "name": "games",
   "version": "1.0.0",
   "description": "A MLB scoreboard that displays the team names and scores for each of the games on a given day",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-dev": "webpack --mode development",
