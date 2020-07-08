@@ -44,11 +44,12 @@ const Home = () => {
   };
 
   const completeRequest = async (event) => {
-    setErrors(null);
+    setErrors(['loading...']);
     event.preventDefault();
     if (!date.d || !date.m || !date.y)
       return setErrors(["Please enter a valid date"]);
     await getGames(date.d, date.m, date.y);
+    setErrors(null);
     return;
   };
 
