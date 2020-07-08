@@ -19,7 +19,7 @@ const Home = () => {
   };
 
   const getGames = async (d, m, y) => {
-    const URL = `http://gd2.mlb.com/components/game/mlb/year_${y}/month_${m}/day_${d}/master_scoreboard.json`;
+    const URL = `https://gd2.mlb.com/components/game/mlb/year_${y}/month_${m}/day_${d}/master_scoreboard.json`;
     try {
       const fetchResult = fetch(
         new Request(URL, { method: "GET", cache: "force-cache" })
